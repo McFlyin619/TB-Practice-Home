@@ -1,0 +1,240 @@
+:root {
+    --primary:rgb(81, 25, 167);
+    --secondary:rgb(116, 116, 116);
+    --body:rgb(225, 225, 225);
+}
+
+body {
+    background-color: var(--secondary);
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 8rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+li {
+    font-size: 3rem;
+}
+
+
+.header {
+    grid-area: header;
+}
+
+.search {
+    grid-area: search;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.hero {
+    grid-area: hero;
+}
+
+.main {
+    grid-area: main;
+}
+
+.right {
+    grid-area: right;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.grid-container {
+    background-color: var(--secondary);
+    display: grid;
+    grid-template-areas: 'header' 'search' 'menu' 'hero''main' 'right' 'footer';
+}
+
+@media(min-width:770px) {
+    .grid-container {
+        background-color: var(--secondary);
+        display: grid;
+        grid-template-areas: 'header header header header header search' 'menu hero hero hero hero hero ''menu main main main main right' 'menu footer footer footer footer footer ';
+    }      
+}
+
+/* Utilities */
+
+.t-cen {
+    text-align: center;
+}
+
+.btn {
+    font-size: 1.5rem;
+    color: white;
+    background-color: var(--primary);
+    border-radius: 5px;
+    padding:  1rem 3rem;
+}
+
+.btn:hover{
+    color: var(--primary);
+    background-color: var(--body);
+    transform: scale(1.3);
+}
+
+/* Header */
+
+.header {
+    background-color: var(--secondary);
+}
+
+.header img {
+    width: 20rem;
+    padding: 2rem;
+}
+
+/* Search */
+
+.search {
+    display: block;
+    background-color: var(--secondary);
+    justify-content: center;
+    align-self: center;
+    margin: 0 2rem 2rem 0;
+}
+
+.search-for {
+    background-color: var(--secondary);
+}
+
+.search label {
+    display: inline-block;
+    font-size: 3rem;
+}
+
+.search input {
+    display: inline-block;
+    width: 80%;
+    font-size: 3rem;
+}
+
+@media(min-width:770px) {
+    .search{
+    background-color: var(--secondary);
+    }
+}
+
+
+
+/* Menu */
+
+.menu {
+    background-color: var(--primary);
+    padding-right: 3rem;
+    
+}
+
+.menu ul li {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 3px black;
+}
+
+.menu ul li:hover {
+    transform: scale(1.1);
+}
+
+/* Hero */
+
+.hero {
+     height: 50rem;
+     background-image: url(/img/TB-Banner22.jpg);
+     background-repeat: no-repeat;
+     background-position: right;
+     background-size: cover;
+     background-attachment: fixed;
+}
+.hero h1 {
+    color: white;
+    text-shadow: 2px 2px 3px var(--primary);
+}
+
+.hero h2 {
+    color: white;
+    text-shadow: 2px 2px 3px var(--primary);
+}   
+
+@media(min-width:770px){
+    .hero {
+        height: 45rem;
+        background-image: url(/img/TB-Banner22.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+
+
+/* Main */
+
+.main {
+    background-color: white;
+    padding: 2rem;
+}
+
+/* Right/Aside */
+
+.right {
+    padding: 0 3rem;
+    background-color: var(--body);
+}
+
+.right h2 {
+    border-bottom: 2px solid ;
+}
+
+.right img {
+    margin-top: 2rem;
+    height: 20rem;
+    -webkit-box-shadow: 0px 5px 15px 5px #000000; 
+    box-shadow: 0px 5px 15px 5px #000000;
+}
+
+.products {
+    color: white;
+    text-shadow: 2px 2px 4px var(--primary);
+    margin-bottom: 4rem;
+}
+
+.price {
+    font-size: 2.5rem;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: var(--secondary);
+    border-top: 2px solid;
+}
+
+footer h3 {
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
