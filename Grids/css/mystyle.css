@@ -163,7 +163,7 @@ li {
 
 .hero {
      height: 50rem;
-     background-image: url(/img/TB-Banner22.jpg);
+     background-image: url(/Grids/img/TB-Banner22.jpg);
      background-repeat: no-repeat;
      background-position: right;
      background-size: cover;
@@ -182,7 +182,7 @@ li {
 @media(min-width:770px){
     .hero {
         height: 45rem;
-        background-image: url(/img/TB-Banner22.jpg);
+        background-image: url(/Grids/img/TB-Banner22.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
